@@ -1,0 +1,186 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Accordion component should render 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        style="color: blue; border: 1px solid black;"
+      >
+        <div>
+          <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+            rel="stylesheet"
+          />
+          <div
+            style="color: blue; border: 1px solid black;"
+          >
+            <span>
+              <p>
+                First Top Level
+                 
+              </p>
+              <p>
+                 
+                <button
+                  style="color: white; background: dodgerblue; padding: 12px 16px; font-size: 16px; cursor: pointer;"
+                >
+                  <i
+                    aria-hidden="true"
+                    class="fa fa-arrow-down"
+                  />
+                </button>
+              </p>
+            </span>
+            <div />
+          </div>
+        </div>
+        <div>
+          <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+            rel="stylesheet"
+          />
+          <div
+            style="color: blue; border: 1px solid black;"
+          >
+            <span>
+              <p>
+                Second Top Level
+                 
+              </p>
+              <p>
+                This is the second of the top level options
+                 
+                <button
+                  style="color: white; background: dodgerblue; padding: 12px 16px; font-size: 16px; cursor: pointer;"
+                >
+                  <i
+                    aria-hidden="true"
+                    class="fa fa-arrow-down"
+                  />
+                </button>
+              </p>
+            </span>
+            <div />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      style="color: blue; border: 1px solid black;"
+    >
+      <div>
+        <link
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+          rel="stylesheet"
+        />
+        <div
+          style="color: blue; border: 1px solid black;"
+        >
+          <span>
+            <p>
+              First Top Level
+               
+            </p>
+            <p>
+               
+              <button
+                style="color: white; background: dodgerblue; padding: 12px 16px; font-size: 16px; cursor: pointer;"
+              >
+                <i
+                  aria-hidden="true"
+                  class="fa fa-arrow-down"
+                />
+              </button>
+            </p>
+          </span>
+          <div />
+        </div>
+      </div>
+      <div>
+        <link
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+          rel="stylesheet"
+        />
+        <div
+          style="color: blue; border: 1px solid black;"
+        >
+          <span>
+            <p>
+              Second Top Level
+               
+            </p>
+            <p>
+              This is the second of the top level options
+               
+              <button
+                style="color: white; background: dodgerblue; padding: 12px 16px; font-size: 16px; cursor: pointer;"
+              >
+                <i
+                  aria-hidden="true"
+                  class="fa fa-arrow-down"
+                />
+              </button>
+            </p>
+          </span>
+          <div />
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

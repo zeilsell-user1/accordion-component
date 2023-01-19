@@ -1,1 +1,2 @@
-export * from './components';
+export { Accordion, Item, SubItem, } from "./accordion";
+
