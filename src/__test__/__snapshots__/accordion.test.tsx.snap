@@ -6,62 +6,74 @@ exports[`Accordion component should render 1`] = `
   "baseElement": <body>
     <div>
       <div
-        style="color: blue; border: 1px solid black;"
+        class="accordion-container"
       >
         <div>
-          <link
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-            rel="stylesheet"
-          />
-          <div
-            style="color: blue; border: 1px solid black;"
-          >
-            <span>
-              <p>
+          <div>
+            <div
+              class="accordion-item-container"
+            >
+              <p
+                class="accordion-dropdown-text"
+              >
                 First Top Level
-                 
               </p>
-              <p>
-                 
-                <button
-                  style="color: white; background: dodgerblue; padding: 12px 16px; font-size: 16px; cursor: pointer;"
-                >
-                  <i
-                    aria-hidden="true"
-                    class="fa fa-arrow-down"
-                  />
-                </button>
-              </p>
-            </span>
+              <p
+                class="accordion-dropdown-text"
+              />
+              <div
+                class="accordian-button"
+              >
+                ▼
+              </div>
+            </div>
             <div />
           </div>
         </div>
         <div>
-          <link
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-            rel="stylesheet"
-          />
-          <div
-            style="color: blue; border: 1px solid black;"
-          >
-            <span>
-              <p>
-                Second Top Level
-                 
+          <div>
+            <div
+              class="accordion-item-container"
+            >
+              <p
+                class="accordion-dropdown-text"
+              >
+                Second Top Leve
               </p>
-              <p>
-                This is the second of the top level options
-                 
-                <button
-                  style="color: white; background: dodgerblue; padding: 12px 16px; font-size: 16px; cursor: pointer;"
+              <p
+                class="accordion-dropdown-text"
+              >
+                This is the second of the top 
+              </p>
+              <div
+                class="accordian-button"
+              >
+                ▼
+              </div>
+            </div>
+            <div />
+          </div>
+        </div>
+        <div>
+          <div>
+            <div
+              class="accordion-item-container"
+            >
+              <p
+                class="accordion-dropdown-text"
+              >
+                <a
+                  href="https://www.bbc.co.uk/news"
                 >
-                  <i
-                    aria-hidden="true"
-                    class="fa fa-arrow-down"
-                  />
-                </button>
+                  Third Top
+                </a>
               </p>
-            </span>
+              <p
+                class="accordion-dropdown-text"
+              >
+                not cool stuff
+              </p>
+            </div>
             <div />
           </div>
         </div>
@@ -70,62 +82,74 @@ exports[`Accordion component should render 1`] = `
   </body>,
   "container": <div>
     <div
-      style="color: blue; border: 1px solid black;"
+      class="accordion-container"
     >
       <div>
-        <link
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-          rel="stylesheet"
-        />
-        <div
-          style="color: blue; border: 1px solid black;"
-        >
-          <span>
-            <p>
+        <div>
+          <div
+            class="accordion-item-container"
+          >
+            <p
+              class="accordion-dropdown-text"
+            >
               First Top Level
-               
             </p>
-            <p>
-               
-              <button
-                style="color: white; background: dodgerblue; padding: 12px 16px; font-size: 16px; cursor: pointer;"
-              >
-                <i
-                  aria-hidden="true"
-                  class="fa fa-arrow-down"
-                />
-              </button>
-            </p>
-          </span>
+            <p
+              class="accordion-dropdown-text"
+            />
+            <div
+              class="accordian-button"
+            >
+              ▼
+            </div>
+          </div>
           <div />
         </div>
       </div>
       <div>
-        <link
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-          rel="stylesheet"
-        />
-        <div
-          style="color: blue; border: 1px solid black;"
-        >
-          <span>
-            <p>
-              Second Top Level
-               
+        <div>
+          <div
+            class="accordion-item-container"
+          >
+            <p
+              class="accordion-dropdown-text"
+            >
+              Second Top Leve
             </p>
-            <p>
-              This is the second of the top level options
-               
-              <button
-                style="color: white; background: dodgerblue; padding: 12px 16px; font-size: 16px; cursor: pointer;"
+            <p
+              class="accordion-dropdown-text"
+            >
+              This is the second of the top 
+            </p>
+            <div
+              class="accordian-button"
+            >
+              ▼
+            </div>
+          </div>
+          <div />
+        </div>
+      </div>
+      <div>
+        <div>
+          <div
+            class="accordion-item-container"
+          >
+            <p
+              class="accordion-dropdown-text"
+            >
+              <a
+                href="https://www.bbc.co.uk/news"
               >
-                <i
-                  aria-hidden="true"
-                  class="fa fa-arrow-down"
-                />
-              </button>
+                Third Top
+              </a>
             </p>
-          </span>
+            <p
+              class="accordion-dropdown-text"
+            >
+              not cool stuff
+            </p>
+          </div>
           <div />
         </div>
       </div>

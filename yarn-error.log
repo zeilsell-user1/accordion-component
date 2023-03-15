@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\yarn\bin\yarn.js login zeilsell-user1
+  C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\yarn\bin\yarn.js add -D @ladle/react
 
 PATH: 
   C:\Users\richa\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\richa\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\PowerShell\7;C:\Users\richa\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\richa\AppData\Local\Microsoft\WindowsApps;C:\Users\richa\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\richa\AppData\Local\GitHubDesktop\bin;C:\Users\richa\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\richa\AppData\Local\Yarn\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
@@ -14,23 +14,23 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: Can't answer a question unless a user TTY
-      at ConsoleReporter.question (C:\Users\richa\AppData\Roaming\nvm\v18.12.1\node_modules\yarn\lib\cli.js:92864:59)
-      at C:\Users\richa\AppData\Roaming\nvm\v18.12.1\node_modules\yarn\lib\cli.js:33064:33
-      at Generator.next (<anonymous>)
-      at step (C:\Users\richa\AppData\Roaming\nvm\v18.12.1\node_modules\yarn\lib\cli.js:310:30)
-      at C:\Users\richa\AppData\Roaming\nvm\v18.12.1\node_modules\yarn\lib\cli.js:328:14
-      at new Promise (<anonymous>)
-      at new F (C:\Users\richa\AppData\Roaming\nvm\v18.12.1\node_modules\yarn\lib\cli.js:5305:28)
-      at C:\Users\richa\AppData\Roaming\nvm\v18.12.1\node_modules\yarn\lib\cli.js:307:12
-      at getCredentials (C:\Users\richa\AppData\Roaming\nvm\v18.12.1\node_modules\yarn\lib\cli.js:33085:17)
-      at Object.<anonymous> (C:\Users\richa\AppData\Roaming\nvm\v18.12.1\node_modules\yarn\lib\cli.js:33193:11)
+  Error: https://npm.pkg.github.com/@ladle%2freact: npm package "react" does not exist under owner "ladle"
+      at params.callback [as _callback] (C:\Users\richa\AppData\Roaming\nvm\v18.12.1\node_modules\yarn\lib\cli.js:66145:18)
+      at self.callback (C:\Users\richa\AppData\Roaming\nvm\v18.12.1\node_modules\yarn\lib\cli.js:140890:22)
+      at Request.emit (node:events:513:28)
+      at Request.<anonymous> (C:\Users\richa\AppData\Roaming\nvm\v18.12.1\node_modules\yarn\lib\cli.js:141862:10)
+      at Request.emit (node:events:513:28)
+      at IncomingMessage.<anonymous> (C:\Users\richa\AppData\Roaming\nvm\v18.12.1\node_modules\yarn\lib\cli.js:141784:12)
+      at Object.onceWrapper (node:events:627:28)
+      at IncomingMessage.emit (node:events:525:35)
+      at endReadableNT (node:internal/streams/readable:1359:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
 
 npm manifest: 
   {
     "name": "@zeilsell-user1/accordion-component",
     "type": "module",
-    "version": "0.0.8",
+    "version": "1.0.1",
     "description": "This is a simple accordion component to be used with react/next apps",
     "author": "Richard George <richard.john.george.3@gmail.com>",
     "license": "MIT",
@@ -42,7 +42,7 @@ npm manifest:
     "types": "dist/index.d.ts",
     "repository": "https://github.com/zeilsell-user1/accordion-component.git",
     "publishConfig": {
-      "registry": "https://npm.pkg.github.com/zeilsell-user1"
+      "registry": "https://npm.pkg.github.com"
     },
     "scripts": {
       "compile": "tsc --project tsconfig.json",

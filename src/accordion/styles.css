@@ -1,0 +1,35 @@
+.accordion-container {
+  margin: 0;
+  padding: 0;
+  font: Montserrat, sans-serif;
+  font-family: Montserrat, sans-serif;
+  border: 1px solid blue;
+}
+
+.accordion-item-container {
+  display: grid;
+  grid-template-columns: 15fr 30fr 7fr;
+  align-items: center;
+  font-size: 3vh;
+  border: 1px solid black;
+}
+
+.accordion-dropdown-container {
+  display: grid;
+  grid-template-columns: 3fr 15fr 30fr;
+  align-items: center;
+  font-size: 3vh;
+  border: 1px solid green;
+}
+
+.accordion-dropdown-text {
+  place-self: start;
+  color: black;
+  border: 1px solid red;
+}
+
+.accordion-button {
+  place-self: centre;
+  color: black;
+  cursor: pointer;
+}

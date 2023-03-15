@@ -3,7 +3,6 @@
   "plugins": [
     "react",
     "@typescript-eslint",
-    "@typescript-eslint/internal",
     "deprecation",
     "eslint-comments",
     "eslint-plugin",
@@ -36,7 +35,7 @@
   "rules": {
     "react/jsx-filename-extension": [
       1,
-      { "extensions": [".js", ".jsx", ".tsx", ".ts"] }
+      { "extensions": [".js", ".jsx", ".tsx", ".ts", ".css"] }
     ],
 
     // make sure we"re not leveraging any deprecated APIs
@@ -89,14 +88,6 @@
       "warn",
       { "varsIgnorePattern": "^_", "argsIgnorePattern": "^_" }
     ],
-
-    //
-    // Internal repo rules
-    //
-
-    "@typescript-eslint/internal/no-poorly-typed-ts-props": "error",
-    "@typescript-eslint/internal/no-typescript-default-import": "error",
-    "@typescript-eslint/internal/prefer-ast-types-enum": "error",
 
     //
     // eslint-base

@@ -1,44 +1,34 @@
-import { AccordionItem } from "./accordion-item";
-import { Item } from "./accordion.types";
-import { AccordionContainer } from "./accordion.styles";
+import "./styles.css";
 
-type Props = {
+import type { Item } from "./accordion.types";
+import { AccordionItem } from "./accordion-item";
+
+interface Props {
   items: Item[];
-  openIcon: string;
-  closeIcon?: string;
-};
+}
 
 const renderItem = (
   item: Item,
   index: number,
-  openIcon: string,
-  closeIcon?: string
-) => {
-  const linkKey = "topM3".concat(index.toString());
+): JSX.Element => {
 
-  if (!item || !item.enabled) {
-    return "empty" + index;
+  if (!item?.enabled) {
+    return (<div><p>{index}</p></div>);
   }
 
   return (
-    <div key={linkKey}>
-      <AccordionItem item={item} openIcon={openIcon} closeIcon={closeIcon} />
+    <div key={item.key}>
+      <AccordionItem item={item} />
     </div>
   );
 };
 
 export const Accordion = ({
   items,
-  openIcon,
-  closeIcon,
 }: Props): JSX.Element => {
   return (
-    <>
-      <div style={AccordionContainer}>
-        {items.map((item, index) =>
-          renderItem(item, index, openIcon, closeIcon)
-        )}
-      </div>
-    </>
+    <div className="accordion-container">
+      {items.map((item, index) => renderItem(item, index))}
+    </div>
   );
 };
