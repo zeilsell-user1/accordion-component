@@ -16,11 +16,13 @@ exports[`Accordion component should render 1`] = `
               <p
                 class="accordion-dropdown-text"
               >
-                First Top Level
+                123456789012345
               </p>
               <p
                 class="accordion-dropdown-text"
-              />
+              >
+                123456789012345678901234567890
+              </p>
               <div
                 class="accordian-button"
               >
@@ -38,13 +40,11 @@ exports[`Accordion component should render 1`] = `
               <p
                 class="accordion-dropdown-text"
               >
-                Second Top Leve
+                Second Top
               </p>
               <p
                 class="accordion-dropdown-text"
-              >
-                This is the second of the top 
-              </p>
+              />
               <div
                 class="accordian-button"
               >
@@ -92,11 +92,13 @@ exports[`Accordion component should render 1`] = `
             <p
               class="accordion-dropdown-text"
             >
-              First Top Level
+              123456789012345
             </p>
             <p
               class="accordion-dropdown-text"
-            />
+            >
+              123456789012345678901234567890
+            </p>
             <div
               class="accordian-button"
             >
@@ -114,13 +116,11 @@ exports[`Accordion component should render 1`] = `
             <p
               class="accordion-dropdown-text"
             >
-              Second Top Leve
+              Second Top
             </p>
             <p
               class="accordion-dropdown-text"
-            >
-              This is the second of the top 
-            </p>
+            />
             <div
               class="accordian-button"
             >

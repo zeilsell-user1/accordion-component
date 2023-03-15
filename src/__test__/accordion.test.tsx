@@ -1,6 +1,7 @@
 import { render } from "@testing-library/react";
-import { Accordion } from "../accordion";
+
 import { itemList } from "../__mocks__/test-menu";
+import { Accordion } from "../accordion";
 
 describe("Accordion component", () => {
   it("should render", () => {
