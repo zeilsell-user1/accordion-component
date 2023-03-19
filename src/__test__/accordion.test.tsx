@@ -5,11 +5,7 @@ import { Accordion } from "../accordion";
 
 describe("Accordion component", () => {
   it("should render", () => {
-    const container = render(
-      <Accordion
-        items={itemList}
-      />
-    );
+    const container = render(<Accordion items={itemList} />);
 
     expect(container).toMatchSnapshot();
   });

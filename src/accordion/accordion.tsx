@@ -7,13 +7,13 @@ interface Props {
   items: Item[];
 }
 
-const renderItem = (
-  item: Item,
-  index: number,
-): JSX.Element => {
-
+const renderItem = (item: Item, index: number): JSX.Element => {
   if (!item?.enabled) {
-    return (<div><p>{index}</p></div>);
+    return (
+      <div>
+        <p>{index}</p>
+      </div>
+    );
   }
 
   return (
@@ -23,9 +23,7 @@ const renderItem = (
   );
 };
 
-export const Accordion = ({
-  items,
-}: Props): JSX.Element => {
+export const Accordion = ({ items }: Props): JSX.Element => {
   return (
     <div className="accordion-container">
       {items.map((item, index) => renderItem(item, index))}

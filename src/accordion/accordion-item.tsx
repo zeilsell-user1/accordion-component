@@ -8,15 +8,16 @@ interface AccordionItemProps {
   item: Item;
 }
 
-export const AccordionItem = ({
-  item,
-}: AccordionItemProps): JSX.Element => {
+export const AccordionItem = ({ item }: AccordionItemProps): JSX.Element => {
   const [isVisible, setIsVisible] = useState(false);
 
   const renderSubMenu = (subItem: SubItem, index: number): JSX.Element => {
-    
     if (!subItem?.enabled || !subItem?.url) {
-      return (<div><p>{index}</p></div>);
+      return (
+        <div>
+          <p>{index}</p>
+        </div>
+      );
     }
 
     if (subItem.description === undefined || subItem.description === null) {
@@ -33,7 +34,7 @@ export const AccordionItem = ({
     );
   };
 
-  const toggleVisible = ():void => {
+  const toggleVisible = (): void => {
     setIsVisible(!isVisible);
   };
 
@@ -47,7 +48,9 @@ export const AccordionItem = ({
         </div>
       ) : (
         <div className="accordion-item-container">
-          <p className={"accordion-dropdown-text"}>{item.title.substring(0, 15)}</p>
+          <p className={"accordion-dropdown-text"}>
+            {item.title.substring(0, 15)}
+          </p>
           <div className={"accordian-button"} onClick={toggleVisible}>
             {isVisible ? "▲" : "▼"}
           </div>
