@@ -16,7 +16,9 @@ exports[`Accordion component should render 1`] = `
               <p
                 class="accordion-dropdown-text"
               >
-                123456789012345
+                <a>
+                  123456789012345
+                </a>
               </p>
               <div
                 class="accordian-button"
@@ -35,7 +37,11 @@ exports[`Accordion component should render 1`] = `
               <p
                 class="accordion-dropdown-text"
               >
-                Second Top
+                <a
+                  href="https://www.bbc.co.uk/news"
+                >
+                  Second Top
+                </a>
               </p>
               <div
                 class="accordian-button"
@@ -79,7 +85,9 @@ exports[`Accordion component should render 1`] = `
             <p
               class="accordion-dropdown-text"
             >
-              123456789012345
+              <a>
+                123456789012345
+              </a>
             </p>
             <div
               class="accordian-button"
@@ -98,7 +106,11 @@ exports[`Accordion component should render 1`] = `
             <p
               class="accordion-dropdown-text"
             >
-              Second Top
+              <a
+                href="https://www.bbc.co.uk/news"
+              >
+                Second Top
+              </a>
             </p>
             <div
               class="accordian-button"

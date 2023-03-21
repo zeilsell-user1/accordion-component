@@ -64,6 +64,7 @@ const subItem1: AccordionSubItem = {
     enabled: true,
     title: "Second Top",
     subItems: subItemList2,
+    url: "https://www.bbc.co.uk/news",
   };
   
   const item3: AccordionItem = {

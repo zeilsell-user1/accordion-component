@@ -36,7 +36,7 @@ export const AccordionNode = ({ item }: AccordionNodeProps): JSX.Element => {
 
   return (
     <div>
-      {item.url ? (
+      {!item.subItems ? (
         <div className="accordion-item-container">
           <p className={"accordion-dropdown-text"}>
             <a href={item.url}>{item.title.substring(0, 15)}</a>
@@ -45,7 +45,11 @@ export const AccordionNode = ({ item }: AccordionNodeProps): JSX.Element => {
       ) : (
         <div className="accordion-item-container">
           <p className={"accordion-dropdown-text"}>
-            {item.title.substring(0, 15)}
+            {item.url ? (
+              <a href={item.url}>{item.title.substring(0, 15)}</a>
+            ) : (
+              <a>{item.title.substring(0, 15)}</a>
+            )}
           </p>
           <div className={"accordian-button"} onClick={toggleVisible}>
             {isVisible ? "▲" : "▼"}

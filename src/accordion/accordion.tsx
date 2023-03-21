@@ -22,7 +22,7 @@ const renderItem = (item: AccordionItem): JSX.Element => {
 export const Accordion = ({ items }: Props): JSX.Element => {
   return (
     <div className="accordion-container">
-      {items.map((item) => renderItem(item))}
+      {items ? items.map((item) => renderItem(item)) : <div />}
     </div>
   );
 };
