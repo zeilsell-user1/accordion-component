@@ -36,26 +36,20 @@ export const AccordionNode = ({ item }: AccordionNodeProps): JSX.Element => {
 
   return (
     <div>
-      {!item.subItems ? (
-        <div className="accordion-item-container">
-          <p className={"accordion-dropdown-text"}>
+      <div className={"accordion-item-container"}>
+        <p className={"accordion-dropdown-text"}>
+          {item.url ? (
             <a href={item.url}>{item.title.substring(0, 15)}</a>
-          </p>
-        </div>
-      ) : (
-        <div className="accordion-item-container">
-          <p className={"accordion-dropdown-text"}>
-            {item.url ? (
-              <a href={item.url}>{item.title.substring(0, 15)}</a>
-            ) : (
-              <a>{item.title.substring(0, 15)}</a>
-            )}
-          </p>
+          ) : (
+            <a>{item.title.substring(0, 15)}</a>
+          )}
+        </p>
+        {(item?.subItems?.length != 0) && (
           <div className={"accordian-button"} onClick={toggleVisible}>
             {isVisible ? "▲" : "▼"}
           </div>
-        </div>
-      )}
+        )}
+      </div>
       <div>
         {isVisible && item.subItems && (
           <div>{item.subItems.map((subItem) => renderSubMenu(subItem))}</div>
