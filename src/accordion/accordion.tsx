@@ -1,24 +1,20 @@
 import "./styles.css";
 
-import type { Item } from "./accordion.types";
-import { AccordionItem } from "./accordion-item";
+import type { AccordionItem } from "./accordion.types";
+import { AccordionNode } from "./accordion-node";
 
 interface Props {
-  items: Item[];
+  items: AccordionItem[];
 }
 
-const renderItem = (item: Item, index: number): JSX.Element => {
+const renderItem = (item: AccordionItem): JSX.Element => {
   if (!item?.enabled) {
-    return (
-      <div>
-        <p>{index}</p>
-      </div>
-    );
+    return <div />;
   }
 
   return (
     <div key={item.key}>
-      <AccordionItem item={item} />
+      <AccordionNode item={item} />
     </div>
   );
 };
@@ -26,7 +22,7 @@ const renderItem = (item: Item, index: number): JSX.Element => {
 export const Accordion = ({ items }: Props): JSX.Element => {
   return (
     <div className="accordion-container">
-      {items.map((item, index) => renderItem(item, index))}
+      {items.map((item) => renderItem(item))}
     </div>
   );
 };

@@ -1,4 +1,4 @@
-interface SubItem {
+interface AccordionSubItem {
   key: string;
   enabled: boolean;
   title: string;
@@ -6,13 +6,13 @@ interface SubItem {
   url: string;
 }
 
-interface Item {
+interface AccordionItem {
   key: string;
   enabled: boolean;
   title: string;
   description?: string;
-  subItems?: SubItem[];
+  subItems?: AccordionSubItem[];
   url?: string;
 }
 
-export { SubItem, Item };
+export { AccordionSubItem, AccordionItem };

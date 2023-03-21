@@ -1,7 +1,7 @@
 
-import { Item, SubItem } from "../accordion";
+import { AccordionItem, AccordionSubItem } from "../accordion";
 
-const subItem1: SubItem = {
+const subItem1: AccordionSubItem = {
     key: "subitem1",
     enabled: true,
     title: "First option",
@@ -9,7 +9,7 @@ const subItem1: SubItem = {
     url: "https://www.bbc.co.uk",
   };
   
-  const subItem2: SubItem = {
+  const subItem2: AccordionSubItem = {
     key: "subitem2",
     enabled: true,
     title: "Second option",
@@ -17,7 +17,7 @@ const subItem1: SubItem = {
     url: "https://www.bbc.co.uk/sport",
   };
   
-  const subItem3: SubItem = {
+  const subItem3: AccordionSubItem = {
     key: "subitem3",
     enabled: true,
     title: "Third option",
@@ -25,7 +25,7 @@ const subItem1: SubItem = {
     url: "https://www.bbc.co.uk/news",
   };
   
-  const subItem4: SubItem = {
+  const subItem4: AccordionSubItem = {
     key: "subitem4",
     enabled: true,
     title: "123456789012345",
@@ -33,7 +33,7 @@ const subItem1: SubItem = {
     url: "https://www.bbc.co.uk",
   };
   
-  const subItem5: SubItem = {
+  const subItem5: AccordionSubItem = {
     key: "subitem5",
     enabled: true,
     title: "Fifth option",
@@ -41,17 +41,17 @@ const subItem1: SubItem = {
     url: "https://www.bbc.co.uk/sport",
   };
   
-  const subItem6: SubItem = {
+  const subItem6: AccordionSubItem = {
     key: "subitem6",
     enabled: true,
     title: "Sixth option",
     url: "https://www.bbc.co.uk/news",
   };
   
-  const subItemList1: SubItem[] = [subItem1, subItem2, subItem3];
-  const subItemList2: SubItem[] = [subItem4, subItem5, subItem6];
+  const subItemList1: AccordionSubItem[] = [subItem1, subItem2, subItem3];
+  const subItemList2: AccordionSubItem[] = [subItem4, subItem5, subItem6];
   
-  const item1: Item = {
+  const item1: AccordionItem = {
     key: "item1",
     enabled: true,
     title: "123456789012345",
@@ -59,14 +59,14 @@ const subItem1: SubItem = {
     subItems: subItemList1,
   };
   
-  const item2: Item = {
+  const item2: AccordionItem = {
     key: "item2",
     enabled: true,
     title: "Second Top",
     subItems: subItemList2,
   };
   
-  const item3: Item = {
+  const item3: AccordionItem = {
     key: "item3",
     enabled: true,
     title: "Third Top",
@@ -74,4 +74,4 @@ const subItem1: SubItem = {
     url: "https://www.bbc.co.uk/news",
   };
 
-export const itemList: Item[] = [item1, item2, item3];
+export const itemList: AccordionItem[] = [item1, item2, item3];

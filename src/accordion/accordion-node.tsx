@@ -2,22 +2,18 @@ import "./styles.css";
 
 import { useState } from "react";
 
-import type { Item, SubItem } from "./accordion.types";
+import type { AccordionItem, AccordionSubItem } from "./accordion.types";
 
-interface AccordionItemProps {
-  item: Item;
+interface AccordionNodeProps {
+  item: AccordionItem;
 }
 
-export const AccordionItem = ({ item }: AccordionItemProps): JSX.Element => {
+export const AccordionNode = ({ item }: AccordionNodeProps): JSX.Element => {
   const [isVisible, setIsVisible] = useState(false);
 
-  const renderSubMenu = (subItem: SubItem, index: number): JSX.Element => {
+  const renderSubMenu = (subItem: AccordionSubItem): JSX.Element => {
     if (!subItem?.enabled || !subItem?.url) {
-      return (
-        <div>
-          <p>{index}</p>
-        </div>
-      );
+      return <div />;
     }
 
     if (subItem.description === undefined || subItem.description === null) {
@@ -58,11 +54,7 @@ export const AccordionItem = ({ item }: AccordionItemProps): JSX.Element => {
       )}
       <div>
         {isVisible && item.subItems && (
-          <div>
-            {item.subItems.map((subItem, index) =>
-              renderSubMenu(subItem, index)
-            )}
-          </div>
+          <div>{item.subItems.map((subItem) => renderSubMenu(subItem))}</div>
         )}
       </div>
     </div>
