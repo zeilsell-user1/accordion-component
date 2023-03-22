@@ -28,8 +28,8 @@ const subItem1: AccordionSubItem = {
   const subItem4: AccordionSubItem = {
     key: "subitem4",
     enabled: true,
-    title: "123456789012345",
-    description: "123456789012345678901234567890",
+    title: "Fourth option to be listed",
+    description: "Another bit of text as a description",
     url: "https://www.bbc.co.uk",
   };
   
@@ -54,8 +54,8 @@ const subItem1: AccordionSubItem = {
   const item1: AccordionItem = {
     key: "item1",
     enabled: true,
-    title: "123456789012345",
-    description: "123456789012345678901234567890",
+    title: "First Top",
+    description: "This is a long description",
     subItems: subItemList1,
   };
   
@@ -74,5 +74,13 @@ const subItem1: AccordionSubItem = {
     description: "not cool stuff",
     url: "https://www.bbc.co.uk/news",
   };
+  
+  const item4: AccordionItem = {
+    key: "item4",
+    enabled: false,
+    title: "not enabled",
+    description: "should not appear",
+    url: "https://www.bbc.co.uk/news",
+  };
 
-export const itemList: AccordionItem[] = [item1, item2, item3];
+export const itemList: AccordionItem[] = [item1, item2, item3, item4];
