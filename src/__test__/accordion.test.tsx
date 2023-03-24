@@ -5,8 +5,10 @@ import { Accordion } from "../accordion";
 
 describe("Accordion component", () => {
   it("should render with default colours", () => {
-    const container = render(<Accordion items={itemList} />);
-    expect(container).toMatchSnapshot();
+    const containerActiveCta = (): JSX.Element => (
+      <Accordion items={itemList} />
+    );
+    expect(containerActiveCta).toMatchSnapshot();
   });
 
   it("should render with red font", () => {
